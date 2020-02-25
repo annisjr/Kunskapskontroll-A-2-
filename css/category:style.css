@@ -1,0 +1,39 @@
+body{
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Styling Sort Button */
+.custom-select{
+    color: #fff;
+    background: url(iconmonstr-angel-down-thin.svg);
+    background-size: 1.2rem;
+    background-position: calc(100% - .5rem) 50%;
+    background-repeat: no-repeat;
+    background-color: #67539E;
+    
+}
+
+/* Borders to Desktop Filter */
+.my-col-category{
+    border-right: 2px solid #67539E;
+}
+h3{
+    border-bottom: 3px solid #67539E;
+}
+
+
+.my-sites{
+    color: purple;
+    border-left: 2px solid rgb(156, 156, 156);
+    padding-left: 10px;
+}
+
+a{
+    color: #67539E;
+}
+
+
+
+    
+
