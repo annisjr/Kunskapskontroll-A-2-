@@ -7,56 +7,86 @@
     <title>Trailstop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap-grid.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap-reboot'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap-reboot-min'>
     <body>
-    <div class="header">header</div>
+      <script src="js/phone_menu.js"></script>
+
     <div class="hero">
-            <img class="hero" src="img/hero_back.jpg">
+            <img class="hero" src="img/hero_back.jpg" width="auto" height="80%">
             <div class="herotext">Brands</div>
         </div>
     </div>
     <div class="container">
-        <div class="wrapper">
-        <div class="d-flex">
-              <div class="align-self-start"> 
+        <div class="row align-items-center">
+              <div class="col"> 
                  <a href="https://www.specialized.com/se/en">
-                <img class="specialized" src="img/specialized-logo-1.png" width="100%" height="100%" alt="Specialized"></a>
-                <div class="align-self-center">Specialized. Made for riders, by riders.<br><a class="link" href="https://www.specialized.com/se/en">Read more</a></div>
+                <img class="rounded float-left" src="img/specialized-logo-1.png" width="100%" height="auto" alt="Specialized"></a>
+                <div class="text-center">Specialized. Made for riders, by riders.<br><a class="link" href="https://www.specialized.com/se/en">Read more</a></div>
               </div>
-              <div class="align-self-center">
+              <div class="col">
                  <a href="https://www.trekbikes.com/se/sv_SE/">
-                 <img class="d-flex justify-content-center" src="img/trek_logo.png" width="100%" height="100%" alt="trek"></a>
-                <div class="align-self-center">Ride bikes.Have fun.Feel good.<br><a class="link" href="https://www.trekbikes.com/se/sv_SE/">Read more</a></div>
+                 <img class="rounded mx-auto d-block" src="img/trek_logo.png" width="100%" height="auto" alt="trek"></a>
+                <div class="text-center">Ride bikes.Have fun.Feel good.<br><a class="link" href="https://www.trekbikes.com/se/sv_SE/">Read more</a></div>
               </div>
-                <div class="align-self-end">
+                <div class="col">
                  <a href="https://www.cube.eu/cube-bikes/">
-                <img class="d-flex justify-content-end" src="img/cube_logo.png" width="100%" height="100%" alt="Cube"></a>
-                <div class="align-self-center">The German bike enthusiasts have designed their new models with pure riding fun in mind.<br><a class="link" href="https://www.cube.eu/cube-bikes/">Read more</a></div>
+                <img class="rounded float-right" src="img/cube_logo.png" width="100%" height="auto" alt="Cube"></a>
+                <div class="text-center">The German bike enthusiasts have designed their new models with pure riding fun in mind.<br><a class="link" href="https://www.cube.eu/cube-bikes/">Read more</a></div>
               </div>
         </div>
-        <div class="d-flex">     
-                <div class="align-self-start">
+        <div class="row align-items-center">     
+                <div class="col">
                  <a href="https://www.bikes.com/">
-                  <img class="rocky" src="img/rocky_logo.png" width="100%" height="100%" alt="Rocky Mountain"></a>
-                <div class="align-self-center">Taking the trail to new heights.<br><a class="link" href="https://www.bikes.com/">Read more</a></div>
+                  <img class="rounded float-left" src="img/rocky_logo.png" width="100%" height="auto" alt="Rocky Mountain"></a>
+                <div class="text-center">Taking the trail to new heights.<br><a class="link" href="https://www.bikes.com/">Read more</a></div>
               </div>
-                <div class="align-self-center">
+                <div class="col">
                  <a href="https://www.scott-sports.com/se/en/products/bike-bikes">
-                  <img class="scott" src="img/scott_logo.png" width="50%" height="100%" alt="Scott"></a>
-                <div class="align-self-center">At SCOTT, cycling is part of our life. Guided by innovation, technology and design, we develop some of the best bikes, apparel and equipment for you.<br><a class="link" href="https://www.scott-sports.com/se/en/products/bike-bikes">Read more</a></div>
+                  <img class="rounded mx-auto d-block" src="img/scott_logo.png" width="100%" height="auto" alt="Scott"></a>
+                <div class="text-center">At SCOTT, cycling is part of our life. Guided by innovation, technology and design, we develop some of the best bikes, apparel and equipment for you.<br><a class="link" href="https://www.scott-sports.com/se/en/products/bike-bikes">Read more</a></div>
               </div>
-                <div class="align-self-end">
+                <div class="col">
                  <a href="https://www.yeticycles.com/">
-                  <img class="yeti" src="img/yeti_logo.png" width="100%" height="100%" alt="Yeti"></a>
-                  <div class="align-self-center">Yeti Cycles is a high-end mountain bike manufacturer. We are Ride Driven.<br><a class="link" href="https://www.yeticycles.com/">Read more</a></div>
+                  <img class="rounded float-right" src="img/yeti_logo.png" width="100%" height="auto" alt="Yeti"></a>
+                  <div class="text-center">Yeti Cycles is a high-end mountain bike manufacturer. We are Ride Driven.<br><a class="link" href="https://www.yeticycles.com/">Read more</a></div>
                 </div>
            </div>
         </div>
     </div>
-    </div>
-  
-    <div class="footer">footer</div>
+    <footer class="row bg-trailstop-light-grey">
+      <div class="p-4 col-6 col-md-3 px-md-5">
+          <h5 class="text-uppercase">Mina Sidor</h5>
+          <div class="text-trailstop-purple">
+              <p class="m-0">Logga in</p>
+              <p class="m-0">Orderstatus</p>
+              <p class="m-0">Mina uppgifter</p>
+          </div>
+      </div>
+      <div class="p-4 col-6 col-md-3 px-md-5">
+          <h5 class="text-uppercase">Kundservice</h5>
+          <div class="text-trailstop-purple">
+              <p class="m-0">Kontakta Oss</p>
+              <p class="m-0">FAQ</p>
+          </div>
+      </div>
+      <div class="p-4 col-6 col-md-3 px-md-5">
+          <h5 class="text-uppercase">Om Oss</h5>
+          <div class="text-trailstop-purple">
+              <p class="m-0">Om Trailstop</p>
+              <p class="m-0">Jobba hos oss</p>
+              <p class="m-0">Villkor</p>
+          </div>
+      </div>
+      <div class="p-4 col-6 col-md-3 px-md-5">
+          <img class="w-25" src="img/social.svg" alt="Facebook">
+          <img class="w-25"src="img/twitter.svg" alt="Twitter">
+      </div>
+  </footer>
 
     </body>
     </head>
