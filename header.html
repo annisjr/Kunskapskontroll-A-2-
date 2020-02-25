@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="header-style.css">
+</head>
+<body>
+
+    <!-- Header small screen -->
+    <div class="pos-f-t col-sm-12 d-block d-md-none my-nav-toggler">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-white p-4">
+          <h5>Login</h5>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend"></div>
+            <input type="text" class="form-control border-dark rounded-0" id="basic-url" aria-describedby="basic-addon3" placeholder="Search">
+          </div>
+          <ul class="list-unstyled text-center toggler-list">
+              <a href="#"><li class="border-bottom mb-3"><h5>Home</h5></li></a>
+              <a href="#"><li class="border-bottom mb-3"><h5>Products</h5></li></a>
+              <a href="#"><li class="border-bottom mb-3"><h5>Brands</h5></li></a>
+              <a href="#"><li class="border-bottom mb-3"><h5>Category</h5></li></a>
+              <a href="#"><li class="border-bottom mb-3"><h5>Repair</h5></li></a>
+              <a href="#"><li class="border-bottom"><h5>Contact</h5></li></a>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar col-sm-12 navbar-light bg-white">
+        <img src="Trailstop.svg" class="col-5 p-3" alt="Responsive image">
+        <a href="#"><img class="ml-5" src="basket.svg" alt=""></a>
+        <button class="navbar-toggler justify-content-end my-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+  </div>
+  
+  <!--Header Desktop-->
+  <nav class="navbar navbar-white bg-white d-none d-md-block my-nav-bar">
+      <img src="Trailstop.svg" class="w-25 p-3 col-2" alt="Responsive image">
+      <span class="col-1 navbar-brand mb-0 h1 my-links">Home</span>
+      <span class="col-1 navbar-brand mb-0 h1 my-links">Products</span>
+      <span class="col-1 navbar-brand mb-0 h1 my-links">Brands</span>
+      <span class="col-1 navbar-brand mb-0 h1 mr-5 my-links">Category</span>
+         
+      <a href="#"><img class="float-right mt-3" src="basket.svg" alt=""></a>
+      <a href="#" class="float-right mr-5 mt-3 my-sites">Mina Sidor</a> 
+  </nav>
+
+  <div class="mt-1 shipping">
+    <p class="text-center border-top border-bottom border-dark">Gratis frakt över 800kr</p>
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
