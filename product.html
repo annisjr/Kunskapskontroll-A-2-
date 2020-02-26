@@ -7,17 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        body{
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.my-sites{
+    color: purple;
+    border-left: 2px solid rgb(156, 156, 156);
+    padding-left: 10px;
+}
+
+a .small-links{
+    color: #67539E;
+}
+a{
+    color: #000;
+}
+.my-checkbox{
+    height: 15px;
+}
+    </style>
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/phone_menu.js"></script>
-<?php 
-    include "parts/header.php";
-    include "parts/phone_menu.php"; 
-?>
+    
+
 <main class="container-fluid">
+    <!-- Header small screen -->
+    <div class="pos-f-t col-sm-12 d-block d-md-none my-nav-toggler">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-white p-4">
+            <h5>Logga in</h5>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"></div>
+              <input type="text" class="form-control border-dark rounded-0" id="basic-url" aria-describedby="basic-addon3" placeholder="Search">
+            </div>
+            <ul class="list-unstyled text-center toggler-list">
+                <a href="#"><li class="border-bottom mb-3 small-links"><h5>Cyklar</h5></li></a>
+                <a href="reparation.html"><li class="border-bottom mb-3 small-links"><h5>Service</h5></li></a>
+                <a href="#"><li class="border-bottom mb-3 small-links"><h5>Kontakta oss</h5></li></a>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar col-sm-12 navbar-light bg-white">
+          <img src="img/Trailstop.svg" class="col-5 p-3" alt="Responsive image">
+          <a href="#"><img class="ml-5" src="img/basket.svg" alt=""></a>
+          <button class="navbar-toggler justify-content-end my-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+    </div>
+    
+    <!--Header Desktop-->
+    <nav class="navbar navbar-white bg-white d-none d-md-block my-nav-bar">
+        <img src="img/Trailstop.svg" class="w-25 p-3 col-2" alt="Responsive image">
+        <a href="#"><span class="col-1 navbar-brand mb-0 h1 my-links">Cycklar</span></a>
+        <a href="reparation.html"><span class="col-1 navbar-brand mb-0 h1 my-links">Service</span></a>
+        <a href="#"><span class="col-1 navbar-brand mb-0 h1 my-links">Kontakta oss</span></a>
+        
+        <!--Nav-images-->
+        <a href="#"><img class="float-right mt-3" src="img/basket.svg" alt=""></a>
+        <a href="#" class="float-right mr-5 mt-3 my-sites">Mina Sidor</a>
+    </nav>
+  
+    <div class="mt-1 shipping">
+      <p class="text-center border-top border-bottom border-dark"><img class="border-0 my-checkbox mr-2" src="img/checkbox.png" alt="">Gratis frakt över 800kr</p>
+    </div>
     <section class="row d-flex bg-trailstop-purple text-white">
         <h6 class="px-3 py-1 my-0 mr-auto text-lg-center">Altitude Carbon 90</h6>
         <h6 class="px-3 py-1 my-0 bg-trailstop-black h-100">79 900kr</h6>
@@ -99,4 +154,9 @@
         </div>
     </footer>
 </main>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/phone_menu.js"></script>
+</body>  
 </html>
