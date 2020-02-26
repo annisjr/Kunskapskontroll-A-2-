@@ -7,6 +7,7 @@
     height:100%;
     filter: blur(0,5px);
     -webkit-filter: blur(0,5px);
+    margin-bottom:20px;
    
 }
 
@@ -27,7 +28,7 @@
   
 }
 
-a{
+.link{
   color:purple !important;
   text-decoration:underline!important;
 
@@ -51,10 +52,11 @@ a{
   .logo{
       width:25%;
       margin-left:50px;
+    
   }
 
   .herotext {
-  top:20%;
+  top:30%;
   }
 
 
