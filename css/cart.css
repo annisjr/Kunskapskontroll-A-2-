@@ -1,0 +1,14 @@
+.box {
+    background-color: #67539E;
+    height:50px;
+    color:white;
+    font-size:25px;
+}
+
+a {
+    color:purple!important;
+}
+
+.btn {
+    background-color:#4CAF50!important;
+}
