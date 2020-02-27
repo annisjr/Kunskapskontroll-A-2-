@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.my-sites{
+    color: purple;
+    border-left: 2px solid rgb(156, 156, 156);
+    padding-left: 10px;
+}
+
+a .small-links{
+    color: #67539E;
+}
+a{
+    color: #000;
+}
+.my-checkbox{
+    height: 15px;
+}

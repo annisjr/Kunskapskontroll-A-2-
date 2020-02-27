@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/header-style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Header small screen -->
+    <div class="pos-f-t col-sm-12 d-block d-md-none my-nav-toggler">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-white p-4">
+            <h5>Logga in</h5>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend"></div>
+                <input type="text" class="form-control border-dark rounded-0" id="basic-url" aria-describedby="basic-addon3" placeholder="Search">
+            </div>
+            <ul class="list-unstyled text-center toggler-list">
+                <a href="#"><li class="border-bottom mb-3 small-links"><h5>Home</h5></li></a>
+                <a href="#"><li class="border-bottom mb-3 small-links"><h5>Products</h5></li></a>
+                <a href="#"><li class="border-bottom mb-3 small-links"><h5>Brands</h5></li></a>
+                <a href="Category-Bootstrap.html"><li class="border-bottom mb-3 small-links"><h5>Category</h5></li></a>
+                <a href="reparation.html"><li class="border-bottom mb-3 small-links"><h5>Repair</h5></li></a>
+                <a href="#"><li class="border-bottom small-links"><h5>Contact</h5></li></a>
+            </ul>
+            </div>
+        </div>
+        <nav class="navbar col-sm-12 navbar-light bg-white">
+            <img src="img/Trailstop.svg" class="col-5 p-3" alt="Responsive image">
+            <a href="contact.html"><img class="ml-5" src="img/basket.svg" alt=""></a>
+            <button class="navbar-toggler justify-content-end my-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+    <!--Header Desktop-->
+    <nav class="navbar navbar-white bg-white d-none d-md-block my-nav-bar">
+        <img src="img/Trailstop.svg" class="w-25 p-3 col-2" alt="Responsive image">
+        <a href="#"><span class="col-1 navbar-brand mb-0 h1 my-links">Cycklar</span></a>
+        <a href="reparation.html"><span class="col-1 navbar-brand mb-0 h1 my-links">Service</span></a>
+        <a href="#"><span class="col-1 navbar-brand mb-0 h1 my-links">Kontakta oss</span></a>
+        
+        <!--Dropdown-->
+        <span class="nav-item dropdown col-1 navbar-brand mb-0 h1 ml-md-5 my-links">
+            <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="">Varumärken</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Varumärken</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Varumärken</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Varumärken</a>
+            <div class="dropdown-divider"></div>
+            </div>
+        </span>   
+        
+        <!--Nav-images-->
+        <a href="#"><img class="float-right mt-3" src="img/basket.svg" alt=""></a>
+        <a href="#" class="float-right mr-5 mt-3 my-sites">Mina Sidor</a>
+    </nav>
+
+    <div class="mt-1 shipping">
+        <p class="text-center border-top border-bottom border-dark"><img class="border-0 my-checkbox mr-2" src="img/checkbox.png" alt="">Gratis frakt över 800kr</p>
+    </div>
+
+
+  <section class="mb-4 m-5 col-ms-12">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Kontakta oss</h2>
+    <!--Section description-->
+    <h5 class="text-center w-responsive mx-auto mb-5">Vår address är Åsögatan 117<br>08-123-4567<br>Trailstop@cmeducations.se<br>Våra öppettider är:<br>
+        Mån-Fre 9.00 - 15.00</h5>
+
+    <div class="row justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">Namn
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control border-dark rounded-0">
+                            <label for="name" class=""></label>
+                        </div>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-md-6">E-postadress
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control border-dark rounded-0">
+                            <label for="email" class=""></label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">Ärende
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control border-dark rounded-0">
+                            <label for="subject" class=""></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">Meddelande
+                            <textarea type="text" id="message" name="message" rows="5" class="form-control border-dark rounded-0 md-textarea"></textarea>
+                            <label for="message"></label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="text-center">
+                <a class="btn text-white bg-dark rounded-0">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
+    </div>
+
+</section>
+<footer class="row bg-trailstop-light-grey">
+    <div class="p-4 col-6 col-md-3 px-md-5">
+        <h5 class="text-uppercase">Mina Sidor</h5>
+        <div class="text-trailstop-purple">
+            <p class="m-0">Logga in</p>
+            <p class="m-0">Orderstatus</p>
+            <p class="m-0">Mina uppgifter</p>
+        </div>
+    </div>
+    <div class="p-4 col-6 col-md-3 px-md-5">
+        <h5 class="text-uppercase">Kundservice</h5>
+        <div class="text-trailstop-purple">
+            <p class="m-0">Kontakta Oss</p>
+            <p class="m-0">FAQ</p>
+        </div>
+    </div>
+    <div class="p-4 col-6 col-md-3 px-md-5">
+        <h5 class="text-uppercase">Om Oss</h5>
+        <div class="text-trailstop-purple">
+            <p class="m-0">Om Trailstop</p>
+            <p class="m-0">Jobba hos oss</p>
+            <p class="m-0">Villkor</p>
+        </div>
+    </div>
+    <div class="p-4 col-6 col-md-3 px-md-5">
+        <img class="w-25" src="img/social.svg" alt="Facebook">
+        <img class="w-25"src="img/twitter.svg" alt="Twitter">
+    </div>
+</footer>
+  
+
+
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
