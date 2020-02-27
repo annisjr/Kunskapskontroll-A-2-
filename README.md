@@ -1,4 +1,4 @@
-# Trailstop-A-2<br/>
+# Trailstop-A-2 (Bootstrap)<br/>
 Live links:<br/>
 http://ludvigolausson.se/bootstrap/<br/>
 http://ludvigolausson.se/bootstrap/register.html<br/>
