@@ -5,58 +5,96 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Trailstop | Rocky Mountain Altitude</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/reparation.css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/reparation.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet" href="css/header-style.css">
+    <style>
+        body {margin: 0px;font-family: 'Roboto Condensed', sans-serif;}
+        a {color: #000;}
+        a .small-links {color: #67539E;}
+        .my-checkbox {height: 15px;}
+        .my-sites {
+            color: purple;
+            border-left: 2px solid rgb(156, 156, 156);
+            padding-left: 10px;}
+    </style>
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/phone_menu.js"></script>
-<?php 
-    include "parts/header.php";
-    include "parts/phone_menu.php"; 
-?>
-
 <main class="container-fluid">
 
-    <section class="row">
-        <img class="col-12 p-0" src="img/SSC.png" alt="Shimano Service Center">
-    </section>
-
+    <!-- Header small screen -->
+    <div class="pos-f-t col-sm-12 d-block d-md-none my-nav-toggler">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-white p-4">
+                <h5>Logga in</h5>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend"></div>
+                    <input type="text" class="form-control border-dark rounded-0" id="basic-url" aria-describedby="basic-addon3" placeholder="Search">
+                </div>
+                <ul class="list-unstyled text-center toggler-list">
+                    <a href="#"><li class="border-bottom mb-3 small-links"><h5>Cyklar</h5></li></a>
+                    <a href="reparation.html"><li class="border-bottom mb-3 small-links"><h5>Service</h5></li></a>
+                    <a href="#"><li class="border-bottom mb-3 small-links"><h5>Kontakta oss</h5></li></a>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar col-sm-12 navbar-light bg-white">
+            <img src="img/Trailstop.svg" class="col-5 p-3" alt="Responsive image">
+            <a href="#"><img class="ml-5" src="img/basket.svg" alt=""></a>
+            <button class="navbar-toggler justify-content-end my-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    
+    <!--Header Desktop-->
+    <nav class="navbar navbar-white bg-white d-none d-md-block my-nav-bar">
+        <img src="img/Trailstop.svg" class="w-25 p-3 col-2" alt="Responsive image">
+        <a href="#"><span class="col-1 navbar-brand mb-0 h1 my-links">Cycklar</span></a>
+        <a href="reparation.html"><span class="col-1 navbar-brand mb-0 h1 my-links">Service</span></a>
+        <a href="#"><span class="col-1 navbar-brand mb-0 h1 my-links">Kontakta oss</span></a>
+        
+        <!--Nav-images-->
+        <a href="#"><img class="float-right mt-3" src="img/basket.svg" alt=""></a>
+        <a href="#" class="float-right mr-5 mt-3 my-sites">Mina Sidor</a>
+    </nav>
+    <div class="mt-1 shipping">
+      <p class="text-center border-top border-bottom border-dark"><img class="border-0 my-checkbox mr-2" src="img/checkbox.png" alt="">Gratis frakt över 800kr</p>
+    </div>
+    <!-- Content below -->
     <div class="row mx-lg-5 px-xl-5">
         <section class="col-12 col-md-7 col-xl-9 p-4">
             <form>
-            <h2 class="col-12 text-center">Serviceformulär</h2>
-            <ul class="p-0">
-                <div class="form-group">
-                <label for="name">Namn</label>
-                <input type="text" class="form-control" id="name" placeholder="Skriv ditt fullständiga namn">
-                </div>
-                <div class="form-group">
-                <label for="phone">Telefonnummer</label>
-                <input type="tel" class="form-control" id="phone" placeholder="Inklusive riktnummer">
-                </div>
-                <div class="form-group">
-                <label for="brand">Märke</label>
-                <input type="brand" class="form-control" id="brand" placeholder="Cykelns märke">
-                </div>
-                <div class="form-group">
-                <label for="model">Modell</label>
-                <input type="text" class="form-control" id="model" placeholder="Modell inklusive årsmodell">
-                </div>
-                <div class="form-group">
-                <label for="message">Ärende</label>
-                <textarea rows="6" id="message" class="form-control" placeholder="Beskriv ditt problem här"></textarea>
-                </div>
-                <div class="form-group d-flex justify-content-center">
-                <button type="submit" class="btn btn-dark">Skicka</button>
-                </div>
-            </ul>
+                <h2 class="col-12 text-center">Serviceformulär</h2>
+                <ul class="p-0">
+                    <div class="form-group">
+                        <label for="name">Namn</label>
+                        <input type="text" class="form-control" id="name" placeholder="Skriv ditt fullständiga namn">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefonnummer</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Inklusive riktnummer">
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">Märke</label>
+                        <input type="brand" class="form-control" id="brand" placeholder="Cykelns märke">
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Modell</label>
+                        <input type="text" class="form-control" id="model" placeholder="Modell inklusive årsmodell">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ärende</label>
+                        <textarea rows="6" id="message" class="form-control" placeholder="Beskriv ditt problem här"></textarea>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                        <button type="submit" class="btn btn-dark">Skicka</button>
+                    </div>
+                </ul>
             </form>
         </section>
-
+        <!-- Servicepartners will jump below the form at smaller viewports -->
         <aside class="p-4 col-md-5 col-xl-3">
             <div class="col-12">
                 <h2 class="w-100 text-center">Service Partners</h2>
@@ -91,6 +129,7 @@
                 <p class="m-0">Om Trailstop</p>
                 <p class="m-0">Jobba hos oss</p>
                 <p class="m-0">Villkor</p>
+                <p class="m-0">Varumärken</p>
             </div>
         </div>
         <div class="p-4 col-6 col-md-3 px-md-5">
@@ -99,6 +138,8 @@
         </div>
     </footer>
 </main>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
