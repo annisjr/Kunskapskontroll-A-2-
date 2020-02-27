@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Trailstop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -14,9 +13,56 @@
         .carousel-inner img {
             width: 100%;
         }
+    
+        body {margin: 0px;font-family: 'Roboto Condensed', sans-serif;}
+        a {color: #000;}
+        a .small-links {color: #67539E;}
+        .my-checkbox {height: 15px;}
+        .my-sites {
+            color: purple;
+            border-left: 2px solid rgb(156, 156, 156);
+            padding-left: 10px;}
     </style>
 </head>
 <body>
+        <!-- Header small screen -->
+        <div class="pos-f-t col-sm-12 d-block d-md-none my-nav-toggler">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-white p-4">
+                    <h5>Logga in</h5>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend"></div>
+                        <input type="text" class="form-control border-dark rounded-0" id="basic-url" aria-describedby="basic-addon3" placeholder="Search">
+                    </div>
+                    <ul class="list-unstyled text-center toggler-list">
+                        <a href="#"><li class="border-bottom mb-3 small-links"><h5>Cyklar</h5></li></a>
+                        <a href="reparation.html"><li class="border-bottom mb-3 small-links"><h5>Service</h5></li></a>
+                        <a href="#"><li class="border-bottom mb-3 small-links"><h5>Kontakta oss</h5></li></a>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar col-sm-12 navbar-light bg-white">
+                <img src="img/Trailstop.svg" class="col-5 p-3" alt="Responsive image">
+                <a href="#"><img class="ml-5" src="img/basket.svg" alt=""></a>
+                <button class="navbar-toggler justify-content-end my-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    <nav class="navbar navbar-white bg-white d-none d-md-block my-nav-bar">
+        <img src="img/Trailstop.svg" class="w-25 p-3 col-2" alt="Responsive image">
+        <a href="#"><span class="col-1 navbar-brand mb-0 h1 my-links">Cycklar</span></a>
+        <a href="reparation.html"><span class="col-1 navbar-brand mb-0 h1 my-links">Service</span></a>
+        <a href="#"><span class="col-1 navbar-brand mb-0 h1 my-links">Kontakta oss</span></a>
+        
+        <!--Nav-images-->
+        <a href="#"><img class="float-right mt-3" src="img/basket.svg" alt=""></a>
+        <a href="#" class="float-right mr-5 mt-3 my-sites">Mina Sidor</a>
+    </nav>
+    <div class="mt-1 shipping">
+      <p class="text-center border-top border-bottom border-dark"><img class="border-0 my-checkbox mr-2" src="img/checkbox.png" alt="">Gratis frakt över 800kr</p>
+    </div>
+
     
     <div id="demo" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -25,7 +71,6 @@
           <li data-target="#demo" data-slide-to="1"></li>
           <li data-target="#demo" data-slide-to="2"></li>
         </ul>
-        
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -53,116 +98,116 @@
       </div>
 
 
-    <div class="row p-3">
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
+        <div class="row p-3">
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm d-sm-none d-md-none d-lg-block d-xs-block">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
         </div>
 
         <div class="row p-3">
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm d-sm-none d-md-none d-lg-block d-xs-block">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
         </div>
 
         <div class="row p-3">
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
-        <div class="col .mt-0 .mb-0">
-            <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-            <div class="container p-3 text-dark">TITLE</div>
-            <div class="container p-3 text-dark">PRIZE</div>
-        </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm d-sm-none d-md-none d-lg-block d-xs-block">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
         </div>
 
         <div class="row bg-dark text-white">
             <div class="col bg-gray text-white w-100 m-2 font-weight-bold">Recommened products</div>
         </div>
-    <div class="row p-3">
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-  </div>
+        <div class="row p-3">
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm d-sm-none d-md-none d-lg-block d-xs-block">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+        </div>
 
-  <div class="row p-3">
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-  </div>
+        <div class="row p-3">
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm d-sm-none d-md-none d-lg-block d-xs-block">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+        </div>
 
-  <div class="row p-3">
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-    <div class="col .mt-0 .mb-0">
-        <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
-        <div class="container p-3 text-dark">TITLE</div>
-        <div class="container p-3 text-dark">PRIZE</div>
-    </div>
-  </div>
+        <div class="row p-3">
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+            <div class="col-sm-6 col-lg-4 .mt-0 .mb-0 .col-sm d-sm-none d-md-none d-lg-block d-xs-block">
+                <div class="container p-3 text-dark"><img src="http://ludvigolausson.se/img/mtn_bike_scott.jpg" width="100%"></div>
+                <div class="container p-3 text-dark">Scott mountainbike</div>
+                <div class="container p-3 text-dark">48839kr</div>
+            </div>
+        </div>
   <footer class="row bg-trailstop-light-grey">
     <div class="p-4 col-6 col-md-3 px-md-5">
         <h5 class="text-uppercase">Mina Sidor</h5>
