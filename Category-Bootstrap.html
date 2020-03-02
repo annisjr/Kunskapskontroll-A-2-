@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Category-Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet" href="css/category-style.css">
+    <link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+    <!-- Header small screen -->
+    <div class="pos-f-t col-sm-12 d-block d-md-none my-nav-toggler">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-white p-4">
+            <h5>Logga in</h5>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"></div>
+              <input type="text" class="form-control border-dark rounded-0" id="basic-url" aria-describedby="basic-addon3" placeholder="Search">
+            </div>
+            <ul class="list-unstyled text-center toggler-list">
+                <a href="Category-Bootstrap.html"><li class="border-bottom mb-3 small-links"><h5>Cycklar</h5></li></a>
+                <a href="reparation.html"><li class="border-bottom mb-3 small-links"><h5>Service</h5></li></a>
+                <a href="contact.html"><li class="border-bottom mb-3 small-links"><h5>Kontakta oss</h5></li></a>
+                <a href="#"><li class="border-bottom mb-3 small-links"><h5>Varumärken</h5></li></a>
+                <!--<a href="#"><li class="border-bottom mb-3 small-links"><h5></h5></li></a>
+                <a href="#"><li class="border-bottom small-links"><h5></h5></li></a>-->
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar col-sm-12 navbar-light bg-white">
+          <img src="img/Trailstop.svg" class="col-5 p-3" alt="Responsive image">
+          <a href="#"><img class="ml-5" src="img/basket.svg" alt=""></a>
+          <button class="navbar-toggler justify-content-end my-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+    </div>
+    
+    <!--Header Desktop-->
+    <nav class="navbar navbar-white bg-white d-none d-md-block my-nav-bar">
+        <img src="img/Trailstop.svg" class="w-25 p-3 col-2" alt="Responsive image">
+        <a href="Category-Bootstrap.html"><span class="col-1 navbar-brand mb-0 h1 my-links">Cycklar</span></a>
+        <a href="reparation.html"><span class="col-1 navbar-brand mb-0 h1 my-links">Service</span></a>
+        <a href="contact.html"><span class="col-1 navbar-brand mb-0 h1 my-links">Kontakta oss</span></a>
+        
+        <!--Dropdown-->
+        <span class="nav-item dropdown col-1 navbar-brand mb-0 h1 ml-md-5 my-links">
+          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Varumärken</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </span>   
+        
+        <!--Nav-images-->
+        <a href="#"><img class="float-right mt-3" src="img/basket.svg" alt=""></a>
+        <a href="#" class="float-right mr-5 mt-3 my-sites">Mina Sidor</a>
+    </nav>
+  
+    <div class="mt-1 shipping">
+      <p class="text-center border-top border-bottom border-dark"><img class="border-0 my-checkbox mr-2" src="img/checkbox.png" alt="">Gratis frakt över 800kr</p>
+    </div>
+
+    <!-- Filter/Sort small screen -->
+
+    <div class="container my-container">
+        <div class="row justify-content-end">
+            <div class="col d-block d-md-none my-col-filter">
+                <select class="custom-select rounded-0" id="inputGroupSelect01">
+                    <option selected>Filtrera</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col col-md-3 my-col-sort">
+                <select class="custom-select rounded-0" id="inputGroupSelect01">
+                    <option selected>Sortera</option>
+                    <option value="1">Högst pris</option>
+                    <option value="2">Lägst pris</option>
+                    <option value="3">Populäritet</option>
+                </select>
+            </div>
+        </div>
+
+        <!--Filter Desktop screen-->  
+        <div class="row justify-content-start p-5 my-row">
+            <div class="col-md-3 d-none d-md-block my-col-category">
+
+                <h1 class="mb-5"><u>Kategori</u></h1>
+    
+                <h3>Välj</h3>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Dam</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Herr</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Junior</label>
+                </div>
+            </div>
+
+            <!--Product Row 1-->
+            <div class="col-6 col-md-3 p-3 my-col ">
+                <a href="product.html"><img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image"></a>
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 p-3 my-col ">
+                <a href="product.html"><img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image"></a>
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 d-none d-md-block p-3 my-col-md ">
+                <a href="product.html"><img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image"></a>
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+        </div>
+
+                    <!--Filter Desktop-->
+        <div class="row justify-content-start p-5 my-row">
+            <div class="col-md-3 mb-3 d-none d-md-block my-col-category">
+                <h3>Storlek</h3>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">24"</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">26"</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">27.5"</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">28"</label>
+                </div>
+            </div>
+
+            <!--Product Row 2-->
+            <div class="col-6 col-md-3 my-col ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 my-col ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+            <div class="col-6 d-none d-md-block col-md-3 my-col-md ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+        </div>
+
+            <!--Filter Desktop-->
+        <div class="row justify-content-start p-5 my-row">
+            <div class="col-md-3 mb-3 d-none d-md-block my-col-category">
+                <h3>Varumärke</h3>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Cube</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Rocky Mountain</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Scott</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Specialized</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Trek</label>
+                </div> 
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Yeti</label>
+                </div>
+            </div>
+
+            <!--Product Row 3-->
+            <div class="col-6 col-md-3 my-col ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 my-col ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+            <div class="col-6 d-none d-md-block col-md-3 my-col-md ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+        </div>
+
+        <!--Product Row 4-->
+        <div class="row justify-content-end p-5 my-row">
+            <div class="col-6 col-md-3 my-col ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 my-col ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 d-none d-md-block my-col-md ">
+                <img src="img/Web_MY20_Altitude_C90_C2_Profile_0.jpg" class="img-fluid" alt="Resposive image">
+                <ul class="list-unstyled text-center">
+                    <li><b>Altitude Carbon 90</b></li>
+                    <li>79 900kr</li>                    
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+                <!-- Footer -->
+    <footer class="row bg-trailstop-light-grey">
+        <div class="p-4 col-6 col-md-3 px-md-5">
+            <h5 class="text-uppercase">Mina Sidor</h5>
+            <div class="text-trailstop-purple">
+                <p class="m-0">Logga in</p>
+                <p class="m-0">Orderstatus</p>
+                <p class="m-0">Mina uppgifter</p>
+            </div>
+        </div>
+        <div class="p-4 col-6 col-md-3 px-md-5">
+            <h5 class="text-uppercase">Kundservice</h5>
+            <div class="text-trailstop-purple">
+                <p class="m-0">Kontakta Oss</p>
+                <p class="m-0">FAQ</p>
+            </div>
+        </div>
+        <div class="p-4 col-6 col-md-3 px-md-5">
+            <h5 class="text-uppercase">Om Oss</h5>
+            <div class="text-trailstop-purple">
+                <p class="m-0">Om Trailstop</p>
+                <p class="m-0">Jobba hos oss</p>
+                <p class="m-0">Villkor</p>
+            </div>
+        </div>
+        <div class="p-4 col-6 col-md-3 px-md-5">
+            <img class="w-25" src="img/social.svg" alt="Facebook">
+            <img class="w-25"src="img/twitter.svg" alt="Twitter">
+        </div>
+    </footer>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
